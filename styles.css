@@ -33,6 +33,27 @@ html {
     scroll-behavior: smooth;
 }
 
-btn:hover, btn:active, btn:focus {
+
+.btn-primary {
+    background-color: var(--color-light-purple);
+}
+
+
+.btn:hover, .btn:active, .btn:focus {
     opacity: 0.9;
+}
+
+.bg {
+    background-image: url("images/pic_1.jpg"), linear-gradient(to top, #071629 50%, transparent);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover, cover;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        background-image: url("images/pic_1.jpg");
+        background-size: cover;
+        background-position: center top;
+    }
 }
