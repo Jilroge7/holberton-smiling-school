@@ -36,10 +36,12 @@ html {
 
 .btn-primary {
     background-color: var(--color-light-purple);
+    border-radius: 40px;
 }
 
 
 .btn:hover, .btn:active, .btn:focus {
+    background-color: var(--color-light-purple);
     opacity: 0.9;
 }
 
@@ -56,4 +58,13 @@ html {
         background-size: cover;
         background-position: center top;
     }
+}
+
+.nav .nav-item .nav-link {
+    color: #FFFFFF;
+}
+
+.nav .nav-item .nav-link:hover, .nav .nav-item .nav-link:focus {
+    text-decoration: underline;
+    color: var(--color-light-purple);
 }
