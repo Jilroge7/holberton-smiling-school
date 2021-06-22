@@ -24,10 +24,6 @@
     src: url(fonts/source_sans_pro/SourceSansPro-Regular.otf);
 }
 
-@font-face {
-    font-family: spincycle_ot;
-    src: url(fonts/spin_cycle_ot/spincycle_ot.otf);
-}
 
 html {
     scroll-behavior: smooth;
@@ -60,11 +56,41 @@ html {
     }
 }
 
-.nav .nav-item .nav-link {
-    color: #FFFFFF;
+.navbar-nav .nav-item .nav-link {
+    font-size: 12px;
+    margin: 1rem;
 }
 
-.nav .nav-item .nav-link:hover, .nav .nav-item .nav-link:focus {
+.navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link:focus {
     text-decoration: underline;
     color: var(--color-light-purple);
+}
+
+.header-hero .header-hero-title {
+    font-family: source_sans_pro;
+    font-size: 120px;
+}
+
+.happy-categories {
+    max-width: 20em;
+}
+
+
+.header-hero-tagline .purple-learn {
+    color: var(--color-light-purple);
+    font-size: 32px;
+}
+
+.header-hero-tagline .text-white {
+    font-size: 32px;
+}
+
+.happy {
+    width: 150px;
+    height: auto;
+}
+
+.pro-name {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
 }

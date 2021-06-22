@@ -2,110 +2,88 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <title>Smiling School</title>
         <meta name="description" content="Design a webpage from scratch with Bootstrap">
-        <link rel="icon" type="image/png" href="images/favicon.ico">   
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="holberton-fonts.css">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header class="container-fluid bg text-white text-center">
-            <div>
-                <nav class="navbar bg-transparent">  
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list">
-                        <span>
-                            <svg class="hamburger mt-4" viewBox="0 0 100 100" width="20px" height="20px">
-                                <rect width="100" height="10" rx="10" fill="white"></rect>
-                                <rect y="30" width="70" height="10" rx="10" fill="white"></rect>
-                                <rect y="60" width="100" height="10" rx="10" fill="white"></rect>
-                            </svg>
-                        </span>
-                    </button>
-                    <a class="navbar-brand mx-auto pt-4">
-                        <img src="images/smile_off.png" alt="smile logo" width="37px" height="30">
-                        <img src="images/logo.png" alt="logo" width="114">
-                    </a>
-                    <div class="justify-content-end" id="nav-list">
-                        <ul class="nav list-group list-group-horizontal justify-content-end list-unstyled mb-0 mt-3 text-uppercase">
-                            <li class="nav-item active">
-                                <a href="#courses" class="nav-link">courses</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a href="#pricing" class="nav-link">pricing</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a href="#login" class="nav-link">login</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="header-hero mt-5 pt-5">
-                <h1 class="header-hero-title pt-5">Get schooled</h1>
-                <ul class="row list-group list-group-horizontal list-unstyled mx-auto pt-3 font-weight-bold px-4">
-                    <li class="col text-uppercase">
-                        <p class="smiles-hero">smiles</p>
-                    </li>
-                    <li class="col text-uppercase">
-                        <p class="grin-hero">grin</p>
-                    </li>
-                    <li class="col text-uppercase">
-                        <p class="laugh-hero">laugh</p>
-                    </li>
-                </ul>
-                <button class="btn btn-primary border-0 text-uppercase mt-2 mb-2 shadow">register for free</button>
-                <div class="header-hero-tagline my-5 pt-5">
-                    <span class="tagline purple-learn">Learn</span>
-                    <span class="tagline text-white">from the pros</span>
-                </div>
-            </div>
-            <div class="container-fluid-sm row mx-auto justify-content-center">
-                <div class="col-sm-8">
-                    <ul class="list-group list-group-horizontal list-unstyled mb-0">
-                        <li class="card border-0 bg-transparent pr-5">
-                            <a href="#phillip">
-                                <img class="card-img-top rounded-circle" src="images/profile_1.jpg"></a>
-                                <div class="card-body">
-                                    <h6 class="card-title">Phillip Massey</h6>
-                                    <p class="card-subtitle text-nowrap font-italic">« Smile of the year »<br>2018 - 2019</p>
-                                </div>
+        <header class="bg text-white text-center">
+            <nav class="navbar navbar-expand-md navbar-dark bg-transparent container-md justify-content-start pt-4">  
+                <button class="navbar-toggler align-self-start text-left col-3 pt-2 border-0" type="button" data-toggle="collapse" data-target="#nav-list">
+                    <span>
+                        <svg class="hamburger" viewBox="0 0 100 100" width="20px" height="20px">
+                            <rect width="100" height="10" rx="10" fill="white"></rect>
+                            <rect y="30" width="70" height="10" rx="10" fill="white"></rect>
+                            <rect y="60" width="100" height="10" rx="10" fill="white"></rect>
+                        </svg>
+                    </span>
+                </button>
+                <a class="navbar-brand pt-2 col-6 col-md-3" href="#brand">
+                    <img class="d-block d-md-inline mr-md-2 mb-2 mx-auto" src="images/smile_off.png" alt="smile logo" width="37px" height="30">
+                    <img class="d-block d-md-inline mx-auto" src="images/logo.png" alt="logo" width="114">
+                </a>
+                <div class="collapse navbar-collapse text-center justify-content-end" id="nav-list">
+                    <ul class="navbar-nav text-uppercase font-weight-bold">
+                        <li class="nav-item active">
+                            <a href="#courses" class="nav-link">courses<span class="sr-only"></span></a>
                         </li>
-                        <li class="card border-0 bg-transparent px-5">
-                            <a href="#nannie">
-                                <img class="card-img-top rounded-circle" src="images/profile_2.jpg"></a>
-                                <div class="card-body">
-                                    <h6 class="card-title">Nannie Lawrence</h6>
-                                    <p class="card-subtitle text-nowrap font-italic">Best « little smile »<br>2017</p>
-                                </div>
-                                
+                        <li class="nav-item active">
+                            <a href="#pricing" class="nav-link">pricing</a>
                         </li>
-                        <li class="card border-0 bg-transparent px-5">    
-                            <a href="#bruce">
-                                <img class="card-img-top rounded-circle" src="images/profile_3.jpg"></a>
-                                <div class="card-body">
-                                    <h6 class="card-subtitle">Bruce Walters</h6>
-                                    <p class="card-text text-nowrap font-italic">Best « Friend smile »<br>live performance 2019</p>
-                                </div>
-                                
-                        </li>
-                        <li class="card border-0 bg-transparent pl-5">    
-                            <a href="#henry">
-                                <img class="card-img-top rounded-circle" src="images/profile_4.jpg"></a>
-                                <div class="card-body">
-                                    <h6 class="card-subtitle">Henry Hughes</h6>
-                                    <p class="card-text text-nowrap font-italic">« 24h smiles winner »<br>2016-2019</p>
-                                </div>
-                                
+                        <li class="nav-item active">
+                            <a href="#login" class="nav-link">login</a>
                         </li>
                     </ul>
                 </div>
+            </nav>
+            <div class="header-hero mt-5 pt-5">
+                <h1 class="header-hero-title pt-5 font-weight-bold m-0 p-0">Get schooled</h1>
+                <div class="happy-categories row mx-auto pt-1 justify-content-center font-weight-bold">
+                    <p class="col text-uppercase smiles-hero">smiles</p>
+                    <p class="col text-uppercase grin-hero">grin</p>
+                    <p class="col text-uppercase laugh-hero">laugh</p>
+                </div>
+                <button class="btn btn-primary border-0 text-uppercase mt-3 mb-5 shadow">register for free</button>
+                <div class="header-hero-tagline container my-5 pt-5">
+                    <span class="purple-learn font-weight-bold pr-1">Learn</span>
+                    <span class="text-white">from the pros</span>
+                </div>
+            </div>
+            <div class="container-fluid-sm row mx-auto justify-content-center">
+                <div class="col-6 col-md-3 mb-md-5 mt-md-3 col-xl-2">
+                    <img class="phil happy rounded-circle" src="images/profile_1.jpg">
+                    <p class="pro-name">Phillip Massey</p>
+                    <p class="font-italic">« Smile of the year »<br>2018 - 2019</p>
+                </div>
+                <div class="col-6 col-md-3 mb-md-5 mt-md-3 col-xl-2">    
+                    <img class="nannie happy rounded-circle" src="images/profile_2.jpg">
+                    <p class="pro-name">Nannie Lawrence</p>           
+                    <p class="font-italic">Best « little smile »<br>2017</p>
+                </div>
+                <div class="col-6 col-md-3 mb-md-5 mt-md-3 col-xl-2">
+                    <img class="bruce happy rounded-circle" src="images/profile_3.jpg">
+                    <p class="pro-name">Bruce Walters</p>
+                    <p class="font-italic">Best « Friend smile »<br>live performance 2019</p>
+                </div>
+                <div class="col-6 col-md-3 mb-md-5 mt-md-3 col-xl-2">
+                    <img class="henry happy rounded-circle" src="images/profile_4.jpg">
+                    <p class="pro-name">Henry Hughes</p>
+                    <p class="font-italic">« 24h smiles winner »<br>2016-2019</p>
+                </div>
             </div>
         </header>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     </body>
 </html>
