@@ -93,6 +93,7 @@ body {
 
 .header-hero-tagline .text-white {
     font-size: 32px;
+    font-weight: 100;
 }
 
 .happy {
@@ -107,4 +108,113 @@ body {
 
 .purple-part {
     background-color: var(--color-light-purple);
+}
+
+.carousel-previous, .carousel-next {
+    height: 148px;
+    overflow: hidden;
+}
+
+.holberton_school-icon-arrow_3::before, .holberton_school-icon-arrow_4::before {
+    font-size: 6rem;
+}
+
+.tutorial-carousel-text {
+    font-weight: 100;
+}
+
+.tutorial-carousel-text .purple-popular {
+    font-weight: 700;
+    color: var(--color-light-purple);
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.profile-1 {
+    width: 30px;
+    height: 30px;
+}
+
+.rating-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-light-purple);
+}
+
+.review-rate {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-light-purple);
+    text-align: right;
+    position: absolute;
+    left: 78.04%;
+    right: 8.50%;
+    top: calc(50% - 27px/2 + 143px);
+}
+
+.smiles-row {
+    background-color:#071629;
+    position: absolute;
+    height: 502px;
+    left: 0px;
+}
+
+.smiles-row-header span {
+    color: var(--color-light-purple);
+}
+
+.smile {
+    position: absolute;
+    width: 45px;
+    height: 36px;
+    left: 152px;
+    top: 0px;
+}
+
+.smiles-title {
+    font-size: 18px;
+    position: absolute;
+    height: 26px;
+    left: 0.19%;
+    right: 0.19%;
+    top: calc(50% - 26px/2 - 1.5px);
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.smiles-text {
+    font-size: 14px;
+    position: absolute;
+    height: 52px;
+    left: 8.75%;
+    right: 8.75%;
+    top: calc(50% - 52px/2 + 50.5px);
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.btn .register {
+    position: absolute;
+    left: 44.38%;
+    right: 44.38%;
+    top: 80.88%;
+    bottom: 10.36%;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+
 }
